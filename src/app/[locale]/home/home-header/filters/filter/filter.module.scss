@@ -1,0 +1,41 @@
+.filter {
+  width: rem(196);
+
+  @include media(mobile) {
+    width: 100%;
+  }
+}
+
+.filterHeight {
+  height: rem(49);
+}
+
+.filterBorder {
+  border: rem(1) solid var(--color-black);
+}
+
+.filterBox {
+  border: rem(1) solid var(--color-black);
+  border-top: 0;
+  height: rem(49);
+  transition: $transition;
+  background-color: var(--color-white);
+  z-index: 10;
+
+  @include media(tablet) {
+    background-color: rgba($hexColorBlack, 0);
+
+    &:hover {
+      background-color: rgba($hexColorBlack, 0.1);
+    }
+  }
+}
+
+.icon {
+  border-left: rem(1) solid var(--color-black);
+  transition: $transition;
+}
+
+.open {
+  transform: rotate(180deg);
+}

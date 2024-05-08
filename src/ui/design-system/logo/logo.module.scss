@@ -1,0 +1,11 @@
+.title {
+  &:after {
+    content: '';
+    position: absolute;
+    left: 5%;
+    bottom: rem(-8);
+    width: 80%;
+    height: rem(2);
+    background-color: var(--color-black);
+  }
+}
